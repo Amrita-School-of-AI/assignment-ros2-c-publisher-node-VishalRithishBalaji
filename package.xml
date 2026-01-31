@@ -4,12 +4,17 @@
   <name>ros2_publisher</name>
   <version>0.0.0</version>
   <description>Assignment: ROS2 Publisher Node</description>
+
   <maintainer email="student@university.edu">Student Name</maintainer>
   <license>Apache-2.0</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
-  <!-- TODO: Add dependencies for rclcpp and std_msgs -->
+  <build_depend>rclcpp</build_depend>
+  <build_depend>std_msgs</build_depend>
+
+  <exec_depend>rclcpp</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
@@ -18,3 +23,4 @@
     <build_type>ament_cmake</build_type>
   </export>
 </package>
+
